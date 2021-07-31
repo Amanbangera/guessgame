@@ -1,0 +1,40 @@
+guessing game 
+
+import random
+
+num = random.randint(0,5)
+
+guess_count = 0
+
+guess_limit = 3
+
+while guess_count < guess_limit:
+
+    guess= int(input('NUMBER : ')) 
+
+    guess_count+=1  
+
+    if num < guess:
+
+      print('number is too large')
+
+    elif num > guess:
+
+      print('number is too small')
+
+    
+
+    if num == guess:
+
+        print("hurray! that's correct")
+
+        break
+
+    elif num != guess:
+
+        print("try again")
+
+        
+
+print ("game over")
+
